@@ -6,16 +6,10 @@ class Counter extends Component {
   }
 
   increaseCounter = () => {
-    let { counter } = this.state
-    this.setState({
-      counter: counter + 1
-    })
+    this.setState(prevState => ({ counter: prevState.counter + 1 }))
   }
   decreaseCounter = () => {
-    let { counter } = this.state
-    this.setState({
-      counter: counter - 1
-    })
+    this.setState(prevState => ({ counter: prevState.counter - 1 }))
   }
 
   render() {
