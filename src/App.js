@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Counter } from './components/Counter'
 import ReduxCounter from './components/ReduxCounter'
+import { ContextCounter } from './components/ContextCounter'
 import logo from './logo.svg'
 import './App.css'
 
@@ -15,6 +16,8 @@ class App extends Component {
           <Counter />
           <hr />
           <ReduxCounter />
+          <hr />
+          <ContextCounter />
         </section>
       </div>
     )
