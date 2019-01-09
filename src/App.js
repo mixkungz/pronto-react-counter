@@ -1,7 +1,8 @@
-import React, { Component } from "react"
-import { Counter } from "./components/Counter"
-import logo from "./logo.svg"
-import "./App.css"
+import React, { Component } from 'react'
+import { Counter } from './components/Counter'
+import ReduxCounter from './components/ReduxCounter'
+import logo from './logo.svg'
+import './App.css'
 
 class App extends Component {
   render() {
@@ -12,6 +13,8 @@ class App extends Component {
         </header>
         <section>
           <Counter />
+          <hr />
+          <ReduxCounter />
         </section>
       </div>
     )
